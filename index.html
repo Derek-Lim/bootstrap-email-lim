@@ -7,153 +7,207 @@
   <link rel="stylesheet" href="style.css">
   <title>Bootstrap Grid Project</title>
 </head>
-<body>
+<body class="d-flex justify-content-center">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <div class="container mx-3 mt-5">
-    <div class="row">
-
-      <div class="col-2 d-none d-lg-block p-5">
-        <div class="row justify-content-center">
-          <button type="button" class="col-auto btn-danger rounded mb-4">New Email</button>
-          <button class="btn">Inbox</button>
-          <button class="btn">Sent</button>
-          <button class="btn">Draft</button>
-          <button class="btn">Outbox</button>
-          <button class="btn">Starred</button>
-          <button class="btn">Trash</button>
+    <div class="row bg-white">
+      <div class="col-2 d-none d-lg-block p-3 py-5 border-end">
+        <div class="row justify-content-center mx-1">
+          <button type="button" class="col-auto btn-danger rounded mb-4 border-0 fs-4 px-3 py-2 mb-5">New Email</button>
+          <button class="btn btn-light text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="email-outline.svg" alt="" height="15">
+              <div class="fs-5">Inbox</div>
+            </div>
+            <div class="btn-success rounded-pill px-3 fs-5 fw-bold">10</div>
+          </button>
+          <button class="btn text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="arrow-right-bold-box-outline.svg" alt="" height="15">
+              <div class="fs-5">Sent</div>
+            </div>
+            <div class="btn-success rounded-pill px-3 fs-5 fw-bold"></div>
+          </button>
+          <button class="btn text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="file.svg" alt="" height="15">
+              <div class="fs-5">Draft</div>
+            </div>
+            <div class="btn-warning rounded-pill px-3 fs-5 fw-bold">7</div>
+          </button>
+          <button class="btn text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="tray-arrow-up.svg" alt="" height="15">
+              <div class="fs-5">Outbox</div>
+            </div>
+            <div class="btn-danger rounded-pill px-3 fs-5 fw-bold">4</div>
+          </button>
+          <button class="btn text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="star-outline.svg" alt="" height="15">
+              <div class="fs-5">Starred</div>
+            </div>
+            <div class="btn-success rounded-pill px-3 fs-5 fw-bold"></div>
+          </button>
+          <button class="btn text-start d-flex flex-row justify-content-around p-3">
+            <div class="d-flex gap-2 align-items-center">
+              <img src="trash-can-outline.svg" alt="" height="15">
+              <div class="fs-5">Trash</div>
+            </div>
+            <div class="btn-success rounded-pill px-3 fs-5 fw-bold"></div>
+          </button>
         </div>
       </div>
-
-      <div class="col-md-3 col-lg-4">
-
-        <div class="row p-4">
-          <input type="text" placeholder="Search email" class="col border rounded">
-        </div>
-
-        <div class="row p-3 border-top">
-          <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
-          </div>
+      <div class="col-md-3 col-lg-3">
+        <div class="row p-4 py-5">
+          <input type="text" placeholder="Search email" class="searchbar col border rounded fs-4 p-3 py-4">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Microsoft Account Password Change</div>
+            <div class="text-truncate fs-4">Change the password for your Microsoft Account</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
+        </div>
+        <div class="row p-3 border-top bg-light">
+          <input type="checkbox" checked class="col-auto">
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">David John</div>
+            <div class="text-truncate fs-4">Hi Emily, Please be informed that</div>
+          </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Mia Lara</div>
+            <div class="text-truncate fs-4">Hello, last date for registering for the annual music event </div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Shane David</div>
+            <div class="text-truncate fs-4">Hey there, can you send me this year’s holiday calendar</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">David Seal</div>
+            <div class="text-truncate fs-4">FYI</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Karen R</div>
+            <div class="text-truncate fs-4">Hi, Please find this week's update</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Bill Gates</div>
+            <div class="text-truncate fs-4">Hey, can you send me this year’s holiday calendar ?</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Brad Kin</div>
+            <div class="text-truncate fs-4">Hi, Please find this week’s monitoring report in the attachment</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Me, Mask</div>
+            <div class="text-truncate fs-4">Hi, Testing is complete. The system is ready to go live.</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Kate Sun</div>
+            <div class="text-truncate fs-4">Template Market: Limited Period Offer!!!</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
         <div class="row p-3 border-top">
           <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
+          <div class="col px-3 d-grid gap-4">
+            <div class="fs-5">Ellen Hope</div>
+            <div class="text-truncate fs-4">Hi Emily, Please approve my leaves for 10 days from 10th</div>
           </div>
+          <img src="star-outline.svg" alt="" height="20" class="col-auto p-0">
         </div>
-        <div class="row p-3 border-top">
-          <input type="checkbox" class="col-auto">
-          <div class="col px-5 d-grid gap-3">
-            <div>Microsoft Account</div>
-            <div>Change the password</div>
-          </div>
-        </div>
-
       </div>
-
-      <div class="col-9 col-lg-6 d-none d-md-block border-start">
-        
-        <div class="row py-4">
-          <div class="col-auto btn-group">
-            <button class="btn btn-outline-dark">Reply</button>
-            <button class="btn btn-outline-dark">Reply All</button>
-            <button class="btn btn-outline-dark">Forward</button>
+      <div class="col-9 col-lg-7 d-none d-md-block border-start">
+        <div class="row p-4 py-5">
+          <div class="col-auto btn-group px-0">
+            <button class="btn btn-outline-secondary fs-5">
+              <img src="reply.svg" alt="" height="20">
+              Reply
+            </button>
+            <button class="btn btn-outline-secondary fs-5">
+              <img src="reply-all.svg" alt="" height="20">
+              Reply All
+            </button>
+            <button class="btn btn-outline-secondary fs-5">
+              <img src="forward.svg" alt="" srcset="" height="20">
+              Forward
+            </button>
           </div>
-          <div class="col-auto btn-group">
-            <button class="btn btn-outline-dark">Attach</button>
-            <button class="btn btn-outline-dark">Delete</button>
+          <div class="col-auto btn-group px-0">
+            <button class="btn btn-outline-secondary fs-5">
+              <img src="paperclip.svg" alt="" height="20">
+              Attach
+            </button>
+            <button class="btn btn-outline-secondary fs-5">
+              <img src="trash-can-outline.svg" alt="" height="20">
+              Delete
+            </button>
           </div>
         </div>
-
-        <div class="row p-4 border-bottom">
-          <div class="col-auto p-5 my-5">image</div>
-          <div class="col-auto p-2 my-5 d-grid gap-3">
-            <div>Weekly Update - Week 19 (May 8, 2022 - May 14, 2022)</div>
-            <div>David John <a href="">itsmedavid123@gmail.com</a></div>
+        <div class="row px-4 border-bottom">
+          <img src="avatar1.png" alt="" height="100" class="col-auto my-5 rounded-circle">
+          <div class="col-9 p-2 my-5 d-grid gap-3">
+            <div class="fw-bold fs-4">Weekly Update - Week 19 (May 8, 2022 - May 14, 2022)</div>
+            <div class="fs-4">
+              David John
+              <a href="" class="fs-4">itsmedavid123@gmail.com</a>
+              <img src="account-multiple.svg" alt="" height="20">
+            </div>
           </div>
         </div>
-
-        <div class="row row-cols-1 gap-3 px-4 py-5">
-          <div class="col">Hi Emily,</div>
-          <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad vitae eaque ratione corrupti quisquam assumenda debitis qui a ea.</div>
-          <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, alias! Ut nesciunt, facere molestias ipsum ipsam exercitationem deserunt! Vero, nam.</div>
-          <div class="col">Regards,</div>
-          <div class="col">David John</div>
+        <div class="row row-cols-1 gap-3 px-4 py-5 my-5">
+          <div class="col fs-4">Hi Emily,</div>
+          <div class="col fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aliquid nobis, beatae iusto laudantium sit quis neque doloremque omnis quia labore reiciendis nemo magnam molestias facilis excepturi corrupti illum illo.</div>
+          <div class="col fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste modi similique perferendis recusandae possimus, dolores, temporibus cum dolorum vitae consectetur excepturi velit, aspernatur ipsa natus ad voluptates. Quisquam, provident.</div>
+          <div class="col fs-4"></div>
+          <div class="col fs-4"></div>
+          <div class="col fs-4"></div>
+          <div class="col fs-4">Regards,</div>
+          <div class="col fs-4">David John</div>
         </div>
-
         <div class="row p-4 d-grid gap-4">
-          <textarea name="" id="" placeholder="Reply here..." class="border rounded"></textarea>
-          <button class="col-2 btn btn-primary">Send</button>
+          <textarea name="" id="" placeholder="Reply here..." class="border rounded fs-4"></textarea>
+          <button class="col-2 btn btn-primary fs-4">
+            <img src="send.svg" alt="" height="20" class="send">
+            Send
+          </button>
         </div>
       </div>
-
     </div>
   </div>
 </body>

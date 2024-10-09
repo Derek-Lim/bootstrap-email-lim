@@ -6,11 +6,18 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
-div {
-  background-color: white;
-  /* border: 1px solid black; */
+/* div {
+  border: 1px solid black;
+} */
+
+.searchbar {
+  height: 4vh;
 }
 
 textarea {
-  height: 20vh;
+  height: 30vh;
+}
+
+.send {
+  filter: invert(1);
 }
